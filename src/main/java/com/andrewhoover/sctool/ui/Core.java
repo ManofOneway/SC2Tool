@@ -10,14 +10,14 @@ import javax.swing.*;
  */
 public class Core {
 
-    ApplicationContext applicationContext = new AnnotationConfigApplicationContext(UiConfig.class);
-    JFrame frame = applicationContext.getBean(JFrame.class);
-
     public Core() {
         initUI();
     }
 
     private void initUI() {
+        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(UiConfig.class);
+        JFrame frame = applicationContext.getBean(JFrame.class);
+
         frame.setTitle("SC2Tool");
         frame.setVisible(true);
         frame.setSize(1200, 800);
