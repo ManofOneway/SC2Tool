@@ -4,6 +4,7 @@ import com.andrewhoover.sctool.data.jackson.Ladder;
 import com.andrewhoover.sctool.data.jackson.League;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.net.URL;
 import java.util.ArrayList;
@@ -14,11 +15,6 @@ import java.util.List;
  */
 public class DataPopulaterUrlNoSave extends DataPopulaterUrl
 {
-    public DataPopulaterUrlNoSave (String OAuthToken)
-    {
-        setOAuthToken(OAuthToken);
-    }
-
     public List<Ladder> getLadders(League league)
     {
         List<Ladder> ladders = new ArrayList<>();
@@ -28,7 +24,7 @@ public class DataPopulaterUrlNoSave extends DataPopulaterUrl
 
             try {
                 String ladder;
-                ladder = readUrl(new URL("https://us.api.battle.net/data/sc2/ladder/" + ladderId + "?access_token=" + getOAuthToken()));
+                ladder = readUrl(new URL("https://us.api.battle.net/data/sc2/ladder/" + ladderId + "?access_token=" + OAuthToken));
                 ObjectMapper mapper = new ObjectMapper();
                 mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
                 ladders.add(mapper.readValue(ladder, Ladder.class));
@@ -48,7 +44,7 @@ public class DataPopulaterUrlNoSave extends DataPopulaterUrl
         for( int i = 0; i < 6; i++ ) {
             try {
                 String league;
-                league = readUrl(new URL("https://us.api.battle.net/data/sc2/league/35/201/0/" + i + "?access_token=" + getOAuthToken()));
+                league = readUrl(new URL("https://us.api.battle.net/data/sc2/league/35/201/0/" + i + "?access_token=" + OAuthToken));
                 ObjectMapper mapper = new ObjectMapper();
                 mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
                 leagues.add(mapper.readValue(league, League.class));

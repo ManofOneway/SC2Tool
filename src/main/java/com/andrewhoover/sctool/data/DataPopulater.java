@@ -2,6 +2,7 @@ package com.andrewhoover.sctool.data;
 
 import com.andrewhoover.sctool.core.Race;
 import com.andrewhoover.sctool.data.jackson.*;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,10 +15,8 @@ public abstract class DataPopulater {
     abstract List<Ladder> getLadders(League league);
     abstract List<League> getLeagues();
 
-    public GraphData populateData ()
+    public GraphData populateData (GraphData graphData)
     {
-        GraphData graphData = new GraphData();
-
         List<League> leagues = getLeagues();
         for( final League league : leagues ) {
             List<Ladder> ladders = getLadders(league);

@@ -15,11 +15,6 @@ import java.util.List;
  */
 public class DataPopulaterUrlSaveFiles extends DataPopulaterUrl
 {
-    public DataPopulaterUrlSaveFiles (String OAuthToken)
-    {
-        setOAuthToken(OAuthToken);
-    }
-
     public List<Ladder> getLadders(League league)
     {
         List<Ladder> ladders = new ArrayList<>();
@@ -29,7 +24,7 @@ public class DataPopulaterUrlSaveFiles extends DataPopulaterUrl
 
             try {
                 String ladder;
-                ladder = readUrl(new URL("https://us.api.battle.net/data/sc2/ladder/" + ladderId + "?access_token=" + getOAuthToken()));
+                ladder = readUrl(new URL("https://us.api.battle.net/data/sc2/ladder/" + ladderId + "?access_token=" + OAuthToken));
                 BufferedWriter writer = new BufferedWriter(new FileWriter(System.getProperty("user.dir") + "/jsons/ladder" + ladderId + ".json"));
                 writer.write(ladder);
                 writer.close();
@@ -52,7 +47,7 @@ public class DataPopulaterUrlSaveFiles extends DataPopulaterUrl
         for( int i = 0; i < 6; i++ ) {
             try {
                 String league;
-                league = readUrl(new URL("https://us.api.battle.net/data/sc2/league/35/201/0/" + i + "?access_token=" + getOAuthToken()));
+                league = readUrl(new URL("https://us.api.battle.net/data/sc2/league/35/201/0/" + i + "?access_token=" + OAuthToken));
                 BufferedWriter writer = new BufferedWriter(new FileWriter(System.getProperty("user.dir") + "/jsons/league" + i + ".json"));
                 writer.write(league);
                 writer.close();

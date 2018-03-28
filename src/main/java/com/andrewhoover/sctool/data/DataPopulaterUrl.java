@@ -11,7 +11,10 @@ import java.net.URL;
  */
 public abstract class DataPopulaterUrl extends DataPopulater
 {
-    private static String OAuthToken;
+    // TODO: This token should not be hard coded. Among other issues, it expires every 30 days.
+    // Could be command line arg, or set in a .properties file.
+    // Probably should be set in a prop file so I can try out using Spring to read it :D
+    protected static String OAuthToken = "6td6f7fvku6wtjvf684twcvg";
 
     public String readUrl( URL url ) {
         String response = new String();
@@ -27,13 +30,5 @@ public abstract class DataPopulaterUrl extends DataPopulater
             System.exit(-1);
         }
         return response;
-    }
-
-    public String getOAuthToken() {
-        return OAuthToken;
-    }
-
-    public void setOAuthToken(String OAuthToken) {
-        this.OAuthToken = OAuthToken;
     }
 }

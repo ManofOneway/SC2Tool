@@ -20,9 +20,7 @@ public class Application
 
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
-                // TODO: This token should not be hard coded. Among other issues, it expires every 30 days.
-                // Could be command line arg, or set in a .properties file.
-                new Core("6td6f7fvku6wtjvf684twcvg");
+                new Core();
             }
         });
     }

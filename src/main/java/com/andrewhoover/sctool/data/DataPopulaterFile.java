@@ -4,6 +4,8 @@ import com.andrewhoover.sctool.data.jackson.Ladder;
 import com.andrewhoover.sctool.data.jackson.League;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
