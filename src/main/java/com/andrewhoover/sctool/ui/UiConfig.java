@@ -1,6 +1,5 @@
 package com.andrewhoover.sctool.ui;
 
-import com.andrewhoover.sctool.data.GraphData;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -17,10 +16,5 @@ public class UiConfig {
     @Bean
     public JFrame jFrame() {
         return new JFrame();
-    }
-
-    @Bean
-    public GraphData graphData() {
-        return new GraphData();
     }
 }

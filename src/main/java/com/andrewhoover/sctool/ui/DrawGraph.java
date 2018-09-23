@@ -1,7 +1,7 @@
 package com.andrewhoover.sctool.ui;
 
 import com.andrewhoover.sctool.core.Race;
-import com.andrewhoover.sctool.data.GraphData;
+import com.andrewhoover.sctool.populator.GraphData;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -24,15 +24,13 @@ public class DrawGraph {
         this.frame = frame;
         this.uiSettings = uiSettings;
         this.graphData = graphData;
-
         drawGraph();
     }
 
-    final Color gridColor = new Color(200, 200, 200, 200);
-    final int padding = 50;
+    private final Color gridColor = new Color(200, 200, 200, 200);
+    private final int padding = 50;
 
-    public void drawGraph() {
-        System.out.println("hi");
+    private void drawGraph() {
         frame.add(new JPanel() {
             @Override
             protected void paintComponent(Graphics g) {
@@ -52,9 +50,9 @@ public class DrawGraph {
 
                 for (int i = uiSettings.getScaleMinMMR(); i < uiSettings.getScaleMaxMMR(); i += 10) {
                     for (Race race : Race.values()) {
-                        if (graphData.getRaceData().get(race).getRace().containsKey(i)) {
-                            int x1 = (int) ((i - uiSettings.getScaleMinMMR() + 1) * uiSettings.getXScale() + padding);
-                            int y1 = (int) ((graphData.getMaxNumberPlayers() - graphData.getRaceData().get(race).getKey(i)) * uiSettings.getYScale() + padding);
+                        if (graphData.getRaceData(race).containsKey(i + race.toString())) {
+                            int x1 = (int) ((i- uiSettings.getScaleMinMMR() + 1) * uiSettings.getXScale() + padding);
+                            int y1 = (int) ((graphData.getMaxNumberPlayers() - graphData.getRaceData(race).get(i + race.toString()).getNumberOfPlayers()) * uiSettings.getYScale() + padding);
                             graphPoints.get(race).add(new Point(x1, y1));
                         }
                     }
@@ -66,10 +64,11 @@ public class DrawGraph {
 
                 if (graphData.getMaxNumberPlayers() != 0) {
 
-                    HashMap<Race, Integer> averagesToScale = new HashMap<>();
-                    for (Race race : Race.values()) {
-                        averagesToScale.put(race, (int) ((graphData.getRaceData().get(race).getRaceAvg() - uiSettings.getScaleMinMMR() + 1) * uiSettings.getXScale() + padding));
-                    }
+//                    HashMap<Race, Integer> averagesToScale = new HashMap<>();
+//                    for (Race race : Race.values()) {
+//                        averagesToScale.put(race, (int) ((graphData.getRaceData(race).getRaceAvg() - uiSettings.getScaleMinMMR() + 1) * uiSettings.getXScale() + padding));
+//                        System.out.println("Average MMR of " + race.toString() + " " + graphData.getRaceData().get(race).getRaceAvg());
+//                    }
 
                     //Draw Y Axis (tick marks and label)
                     for (int i = 0; i < graphData.getMaxNumberPlayers(); i = i + (graphData.getMaxNumberPlayers() / 10)) {
@@ -128,7 +127,7 @@ public class DrawGraph {
                             int y2 = graphPoints.get(race).get(i + 1).y;
                             g2.drawLine(x1, y1, x2, y2);
                         }
-                        g2.drawLine(averagesToScale.get(race), padding, averagesToScale.get(race), getHeight() - (padding + 1));
+                        //g2.drawLine(averagesToScale.get(race), padding, averagesToScale.get(race), getHeight() - (padding + 1));
                     }
                 }
             }

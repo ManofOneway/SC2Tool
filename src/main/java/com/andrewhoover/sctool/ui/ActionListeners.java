@@ -31,11 +31,8 @@ public class ActionListeners {
                 uiSettings.setClickUp((int) ((click.getX() - 50) / uiSettings.getXScale()) - 25);
                 uiSettings.setClickUp(uiSettings.getClickUp() + uiSettings.getScaleMinMMR());
 
-                if(uiSettings.getClickUp() > uiSettings.getClickDown()) {
-                    uiSettings.setScaleMaxMMR(round(uiSettings.getClickUp()));
-                    uiSettings.setScaleMinMMR(round(uiSettings.getClickDown()));
-                    frame.repaint();
-                }
+                uiSettings.setNewScale(round(uiSettings.getClickUp()), round(uiSettings.getClickDown()));
+                frame.repaint();
             }
         });
     }

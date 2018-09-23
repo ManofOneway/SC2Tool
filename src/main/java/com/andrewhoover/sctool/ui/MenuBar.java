@@ -1,6 +1,6 @@
 package com.andrewhoover.sctool.ui;
 
-import com.andrewhoover.sctool.data.*;
+import com.andrewhoover.sctool.populator.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -13,11 +13,11 @@ import java.awt.event.KeyEvent;
  */
 @Component
 public class MenuBar {
-    private GraphData graphData;
+    private final DataPopulator dataPopulator;
 
     @Autowired
-    public MenuBar(JFrame frame, UiSettings uiSettings, GraphData graphData) {
-        this.graphData = graphData;
+    public MenuBar(JFrame frame, UiSettings uiSettings, DataPopulator dataPopulator) {
+        this.dataPopulator = dataPopulator;
         createMenuBar(frame, uiSettings);
     }
 
@@ -28,14 +28,6 @@ public class MenuBar {
         JMenu file = new JMenu("File");
         file.setMnemonic(KeyEvent.VK_F);
 
-        JMenuItem runMenuItem = new JMenuItem("Run from Files");
-        runMenuItem.setMnemonic(KeyEvent.VK_R);
-        runMenuItem.setToolTipText("Run with local files.");
-        runMenuItem.addActionListener((ActionEvent event) -> {
-            populateData(new DataPopulaterFile(), uiSettings);
-            frame.repaint();
-        });
-
         JMenuItem downloadAndSaveMenuItem = new JMenuItem("Download and Save");
         downloadAndSaveMenuItem.setMnemonic(KeyEvent.VK_D);
         downloadAndSaveMenuItem.setToolTipText("Download local files and save them to /jsons.");
@@ -43,19 +35,7 @@ public class MenuBar {
             int dialogButton = JOptionPane.YES_NO_OPTION;
             int dialogResult = JOptionPane.showConfirmDialog (null, "Are you sure you'd like to download files? It will take 10-15 minutes.", "Warning", dialogButton);
             if(dialogResult == JOptionPane.YES_OPTION) {
-                populateData(new DataPopulaterUrlSaveFiles(), uiSettings);
-                frame.repaint();
-            }
-        });
-
-        JMenuItem downloadWithoutSaveMenuItem = new JMenuItem("Download Without Saving");
-        downloadWithoutSaveMenuItem.setMnemonic(KeyEvent.VK_O);
-        downloadWithoutSaveMenuItem.setToolTipText("Download local files without saving them.");
-        downloadWithoutSaveMenuItem.addActionListener((ActionEvent event) -> {
-            int dialogButton = JOptionPane.YES_NO_OPTION;
-            int dialogResult = JOptionPane.showConfirmDialog (null, "Are you sure you'd like to download files? It will take 10-15 minutes.", "Warning", dialogButton);
-            if(dialogResult == JOptionPane.YES_OPTION) {
-                populateData(new DataPopulaterUrlNoSave(), uiSettings);
+                populateData();
                 frame.repaint();
             }
         });
@@ -64,14 +44,11 @@ public class MenuBar {
         resetScaleMenuItem.setMnemonic(KeyEvent.VK_S);
         resetScaleMenuItem.setToolTipText("Reset the scale to full MMR range found.");
         resetScaleMenuItem.addActionListener((ActionEvent event) -> {
-            uiSettings.setScaleMaxMMR(graphData.getMaxMMR());
-            uiSettings.setScaleMinMMR(graphData.getMinMMR());
+            uiSettings.setScaleToDefaults();
             frame.repaint();
         });
 
-        file.add(runMenuItem);
         file.add(downloadAndSaveMenuItem);
-        file.add(downloadWithoutSaveMenuItem);
         file.add(resetScaleMenuItem);
 
         menuBar.add(file);
@@ -79,10 +56,8 @@ public class MenuBar {
         frame.setJMenuBar(menuBar);
     }
 
-    private void populateData(DataPopulater dataPopulater, UiSettings uiSettings)
+    private void populateData()
     {
-        dataPopulater.populateData(graphData);
-        uiSettings.setScaleMaxMMR(graphData.getMaxMMR());
-        uiSettings.setScaleMinMMR(graphData.getMinMMR());
+        dataPopulator.populateData();
     }
 }

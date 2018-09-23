@@ -1,5 +1,6 @@
 package com.andrewhoover.sctool.ui;
 
+import com.andrewhoover.sctool.populator.GraphData;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -9,15 +10,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class UiSettings {
 
-    @Autowired
-    public UiSettings() {
-        scaleMinMMR = 0;
-        scaleMaxMMR = 0;
-        xScale = 0.0;
-        yScale = 0.0;
-        clickUp = 0;
-        clickDown = 0;
-    }
+    private final GraphData graphData;
 
     private int scaleMinMMR;
     private int scaleMaxMMR;
@@ -27,6 +20,17 @@ public class UiSettings {
 
     private int clickDown;
     private int clickUp;
+
+    @Autowired
+    public UiSettings(GraphData graphData) {
+        this.graphData = graphData;
+        scaleMinMMR = 0;
+        scaleMaxMMR = 0;
+        xScale = 0.0;
+        yScale = 0.0;
+        clickUp = 0;
+        clickDown = 0;
+    }
 
     public void setClickDown(int clickDown) {
         this.clickDown = clickDown;
@@ -56,14 +60,6 @@ public class UiSettings {
         return scaleMaxMMR;
     }
 
-    public void setScaleMaxMMR(Integer scaleMaxMMR) {
-        this.scaleMaxMMR = scaleMaxMMR;
-    }
-
-    public void setScaleMinMMR(Integer scaleMinMMR) {
-        this.scaleMinMMR = scaleMinMMR;
-    }
-
     public void setXScale(double xScale) {
         this.xScale = xScale;
     }
@@ -74,5 +70,18 @@ public class UiSettings {
 
     public double getYScale() {
         return yScale;
+    }
+
+    public void setNewScale(Integer clickUp, Integer clickDown) {
+        if(clickUp > clickDown + 50) {
+            scaleMinMMR = clickDown;
+            scaleMaxMMR = clickUp;
+        }
+    }
+
+    public void setScaleToDefaults()
+    {
+        scaleMinMMR = graphData.getMinMMR();
+        scaleMaxMMR = graphData.getMaxMMR();
     }
 }
