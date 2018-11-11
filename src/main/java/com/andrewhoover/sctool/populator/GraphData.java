@@ -17,7 +17,7 @@ public class GraphData {
     private int maxMMR = 0;
     private int minMMR = 10000;
 
-    private int maxNumberPlayers = 0;
+    private int maxNumberPlayers = 1;
 
     private HashMap<String, DataPoint> dataPointMap = new HashMap<>();
 

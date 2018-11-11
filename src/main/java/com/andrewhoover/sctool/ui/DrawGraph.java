@@ -64,12 +64,6 @@ public class DrawGraph {
 
                 if (graphData.getMaxNumberPlayers() != 0) {
 
-//                    HashMap<Race, Integer> averagesToScale = new HashMap<>();
-//                    for (Race race : Race.values()) {
-//                        averagesToScale.put(race, (int) ((graphData.getRaceData(race).getRaceAvg() - uiSettings.getScaleMinMMR() + 1) * uiSettings.getXScale() + padding));
-//                        System.out.println("Average MMR of " + race.toString() + " " + graphData.getRaceData().get(race).getRaceAvg());
-//                    }
-
                     //Draw Y Axis (tick marks and label)
                     for (int i = 0; i < graphData.getMaxNumberPlayers(); i = i + (graphData.getMaxNumberPlayers() / 10)) {
                         int x1 = padding;
@@ -127,7 +121,6 @@ public class DrawGraph {
                             int y2 = graphPoints.get(race).get(i + 1).y;
                             g2.drawLine(x1, y1, x2, y2);
                         }
-                        //g2.drawLine(averagesToScale.get(race), padding, averagesToScale.get(race), getHeight() - (padding + 1));
                     }
                 }
             }

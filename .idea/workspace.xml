@@ -7,8 +7,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25afffd4-e8ff-4941-b16e-d60635b03689" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/andrewhoover/sctool/populator/GraphDataTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sctool.iml" beforeDir="false" afterPath="$PROJECT_DIR$/sctool.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/populator/DataPopulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/populator/DataPopulator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/populator/GraphData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/populator/GraphData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/populator/PopulatorConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/populator/PopulatorConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/ui/DrawGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/ui/DrawGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <ignored path="sctool.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,8 +42,24 @@
       <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/core/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="57" selection-start-line="4" selection-start-column="57" selection-end-line="4" selection-end-column="57" />
+            <state relative-caret-position="153">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+              <folding>
+                <element signature="e#972#973#0" expanded="true" />
+                <element signature="e#1032#1033#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PopulatorConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/populator/PopulatorConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -41,32 +67,11 @@
       <file leaf-file-name="DataPopulator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/populator/DataPopulator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2408">
-              <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+            <state relative-caret-position="-816">
+              <caret line="77" column="73" selection-start-line="77" selection-start-column="73" selection-end-line="77" selection-end-column="73" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DataConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/data/DataConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="59" column="33" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1258">
-              <caret line="74" column="18" selection-start-line="74" selection-start-column="18" selection-end-line="74" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -74,11 +79,8 @@
       <file leaf-file-name="GraphMetadataRepository.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/data/database/GraphMetadataRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
+            <state relative-caret-position="68">
               <caret line="8" column="71" selection-start-line="8" selection-start-column="71" selection-end-line="8" selection-end-column="71" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -86,8 +88,8 @@
       <file leaf-file-name="GraphMetadata.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/data/database/GraphMetadata.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+            <state relative-caret-position="391">
+              <caret line="23" column="50" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#882#883#0" expanded="true" />
@@ -99,11 +101,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataPoint.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/data/database/DataPoint.java">
+      <file leaf-file-name="GraphData.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/populator/GraphData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="16" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="16" />
+            <state relative-caret-position="235">
+              <caret line="63" column="38" selection-start-line="63" selection-start-column="38" selection-end-line="63" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -111,20 +113,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Race.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/core/Race.java">
+      <file leaf-file-name="GraphDataTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/andrewhoover/sctool/populator/GraphDataTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+            <state relative-caret-position="-265">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#208#209#0" expanded="true" />
+                <element signature="e#250#251#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataPointRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/data/database/DataPointRepository.java">
+      <file leaf-file-name="DrawGraph.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/ui/DrawGraph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+            <state relative-caret-position="330">
+              <caret line="123" column="21" selection-start-line="123" selection-start-column="21" selection-end-line="123" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="94" column="24" selection-start-line="94" selection-start-column="24" selection-end-line="94" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -135,8 +163,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -152,6 +180,14 @@
       <find>System</find>
       <find>a</find>
       <find>int</find>
+      <find>graphData</find>
+      <find>round</find>
+      <find>load</find>
+      <find>getGamesPlayed</find>
+      <find>access_token</find>
+      <find>APIKEY</find>
+      <find>slf4j</find>
+      <find>maxNumberPlayers</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -169,10 +205,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/ui/base.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/ui/RaceData.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/jackson/League.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/jackson/Tier.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/jackson/Division.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/jackson/Ladder.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/jackson/Team.java" />
@@ -197,7 +229,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/data/RaceData.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/populator/DataPopulatorUrlSaveFiles.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/populator/DataPopulatorUrlSaveDb.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/populator/PopulatorConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/populator/DataPopulatorFile.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/populator/DataPopulatorUrl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/populator/RaceData.java" />
@@ -206,19 +237,24 @@
         <option value="$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/core/SpringConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/ui/Core.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/data/DataConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/data/database/GraphMetadataRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/data/database/GraphMetadata.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/data/database/ProtossDataPointRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/data/database/DataPointRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/data/database/DataPoint.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/ui/DrawGraph.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/ui/MenuBar.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/ui/UiSettings.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/core/Application.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/populator/GraphData.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/ui/ActionListeners.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/data/jackson/Player.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/data/database/DataPoint.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/data/jackson/Team.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/populator/PopulatorConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/core/Application.java" />
+        <option value="$PROJECT_DIR$/target/classes/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/populator/GraphData.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/andrewhoover/sctool/populator/GraphDataTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/populator/DataPopulator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/ui/DrawGraph.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
@@ -257,8 +293,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -269,13 +306,46 @@
             <path>
               <item name="sctool" type="b2602c69:ProjectViewProjectNode" />
               <item name="sctool" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sctool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sctool" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sctool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sctool" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sctool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sctool" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sctool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sctool" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sctool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sctool" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="populator" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -312,28 +382,6 @@
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.andrewhoover.sctool.App" />
-      <module name="sctool" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.andrewhoover.sctool.core.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.andrewhoover.sctool.core.Application" />
-      <module name="sctool" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.andrewhoover.sctool.core.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
     <configuration name="Unnamed" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.andrewhoover.sctool.core.Application" />
       <module name="sctool" />
@@ -344,6 +392,121 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="GraphDataTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sctool" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.andrewhoover.sctool.populator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.andrewhoover.sctool.populator" />
+      <option name="MAIN_CLASS_NAME" value="com.andrewhoover.sctool.populator.GraphDataTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="GraphDataTest.testGetMaxNumberPlayers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sctool" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.andrewhoover.sctool.populator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.andrewhoover.sctool.populator" />
+      <option name="MAIN_CLASS_NAME" value="com.andrewhoover.sctool.populator.GraphDataTest" />
+      <option name="METHOD_NAME" value="testGetMaxNumberPlayers" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="GraphDataTest.testMapData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sctool" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.andrewhoover.sctool.populator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.andrewhoover.sctool.populator" />
+      <option name="MAIN_CLASS_NAME" value="com.andrewhoover.sctool.populator.GraphDataTest" />
+      <option name="METHOD_NAME" value="testMapData" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="GraphDataTest.testMapDataRounding" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sctool" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.andrewhoover.sctool.populator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.andrewhoover.sctool.populator" />
+      <option name="MAIN_CLASS_NAME" value="com.andrewhoover.sctool.populator.GraphDataTest" />
+      <option name="METHOD_NAME" value="testMapDataRounding" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="GraphDataTest.testNewMin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sctool" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.andrewhoover.sctool.populator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.andrewhoover.sctool.populator" />
+      <option name="MAIN_CLASS_NAME" value="com.andrewhoover.sctool.populator.GraphDataTest" />
+      <option name="METHOD_NAME" value="testNewMin" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -579,13 +742,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.Unnamed" />
-      <item itemvalue="Application.App" />
-      <item itemvalue="Application.Application" />
+      <item itemvalue="JUnit.GraphDataTest.testNewMin" />
+      <item itemvalue="JUnit.GraphDataTest" />
+      <item itemvalue="JUnit.GraphDataTest.testGetMaxNumberPlayers" />
+      <item itemvalue="JUnit.GraphDataTest.testMapData" />
+      <item itemvalue="JUnit.GraphDataTest.testMapDataRounding" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Application" />
-        <item itemvalue="Application.App" />
+        <item itemvalue="JUnit.GraphDataTest" />
+        <item itemvalue="JUnit.GraphDataTest.testMapDataRounding" />
+        <item itemvalue="JUnit.GraphDataTest.testMapData" />
+        <item itemvalue="JUnit.GraphDataTest.testGetMaxNumberPlayers" />
+        <item itemvalue="JUnit.GraphDataTest.testNewMin" />
       </list>
     </recent_temporary>
   </component>
@@ -602,6 +771,38 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="GraphDataTest_testGetMaxNumberPlayers - 2018.11.11 at 10h 03m 30s.xml">
+      <configuration name="GraphDataTest.testGetMaxNumberPlayers" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GraphDataTest_testGetMaxNumberPlayers - 2018.11.11 at 10h 03m 35s.xml">
+      <configuration name="GraphDataTest.testGetMaxNumberPlayers" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GraphDataTest_testGetMaxNumberPlayers - 2018.11.11 at 10h 04m 04s.xml">
+      <configuration name="GraphDataTest.testGetMaxNumberPlayers" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GraphDataTest_testGetMaxNumberPlayers - 2018.11.11 at 10h 04m 20s.xml">
+      <configuration name="GraphDataTest.testGetMaxNumberPlayers" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GraphDataTest_testMapData - 2018.11.11 at 10h 11m 21s.xml">
+      <configuration name="GraphDataTest.testMapData" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GraphDataTest_testMapData - 2018.11.11 at 10h 11m 51s.xml">
+      <configuration name="GraphDataTest.testMapData" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GraphDataTest_testMapDataRounding - 2018.11.11 at 10h 12m 13s.xml">
+      <configuration name="GraphDataTest.testMapDataRounding" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GraphDataTest - 2018.11.11 at 10h 12m 44s.xml">
+      <configuration name="GraphDataTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GraphDataTest_testMapDataRounding - 2018.11.11 at 10h 12m 48s.xml">
+      <configuration name="GraphDataTest.testMapDataRounding" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GraphDataTest - 2018.11.11 at 10h 22m 46s.xml">
+      <configuration name="GraphDataTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
@@ -613,6 +814,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
@@ -621,20 +823,20 @@
       <window_info id="Image Layers" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="4" visible="true" weight="0.33333334" />
+      <window_info anchor="right" id="Maven Projects" order="4" weight="0.33333334" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32837406" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32837406" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32936078" />
       <window_info id="Capture Tool" order="5" />
       <window_info anchor="right" id="Designer" order="5" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49434572" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49434572" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32837406" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="3" />
       <window_info anchor="right" id="Theme Preview" order="4" />
       <window_info id="Favorites" order="4" sideWeight="0.5056543" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3995749" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.3995749" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -655,13 +857,17 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="84" />
+      <option name="time" value="128" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="graphData" language="JAVA" />
         <watch expression="dataPointMap.get(4000)" language="JAVA" />
         <watch expression="dataPointRepository.findAll()" language="JAVA" />
+        <watch expression="new URL(&quot;https://us.api.battle.net/sc2/profile/&quot; +&#10;                    team.getId() +&#10;                    &quot;/&quot; +&#10;                    team.getRealm() +&#10;                    &quot;/&quot; +&#10;                    team.getName().split(&quot;#&quot;)[0] +&#10;                    &quot;/?locale=en_US&amp;apikey=&quot; +&#10;                    APIKEY)" language="JAVA" />
+        <watch expression="Integer.parseInt(mapper.readValue(response, Player.class).getCareer().get(&quot;careerTotalGames&quot;))" />
+        <watch expression="team" />
+        <watch expression="br" />
       </configuration>
     </watches-manager>
   </component>
@@ -678,6 +884,18 @@
       </expression>
     </expressions>
     <expressions id="watch">
+      <expression>
+        <expression-string>new URL(&quot;https://us.api.battle.net/sc2/profile/&quot; +
+                    team.getId() +
+                    &quot;/&quot; +
+                    team.getRealm() +
+                    &quot;/&quot; +
+                    team.getName().split(&quot;#&quot;)[0] +
+                    &quot;/?locale=en_US&amp;apikey=&quot; +
+                    APIKEY)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>dataPointRepository.findAll()</expression-string>
         <language-id>JAVA</language-id>
@@ -723,18 +941,9 @@
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>uiSettings.scaleMaxMMR</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/andrewhoover/sctool/AppTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/core/MessageService.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/core/MessagePrinter.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/App.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/ui/base.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/populator/DataPopulator.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -759,21 +968,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/data/jackson/League.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jsons/ladder265109.json" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/data/jackson/Team.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/javax/persistence/persistence-api/1.0.2/persistence-api-1.0.2.jar!/javax/persistence/SequenceGenerator.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -785,13 +980,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/data/jackson/Division.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
@@ -828,32 +1016,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/data/database/ZergDataPointRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="81" selection-start-line="4" selection-start-column="81" selection-end-line="4" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/data/database/ZergDataPointRepository.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/core/SpringConfig.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/net/URLClassLoader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="380" selection-start-line="380" selection-end-line="380" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/data/jackson/Ladder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -864,13 +1032,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/data/database/TerranDataPointRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/data/database/TerranDataPointRepository.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/util/HashMap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
@@ -885,35 +1047,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/ui/UiConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/ui/MenuBar.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="172">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2236#2237#0" expanded="true" />
-            <element signature="e#2280#2281#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/ui/DrawGraph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -921,9 +1058,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -931,48 +1065,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/populator/PopulatorConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/populator/GraphData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2084#2085#0" expanded="true" />
-            <element signature="e#2118#2119#0" expanded="true" />
-            <element signature="e#2409#2410#0" expanded="true" />
-            <element signature="e#2445#2446#0" expanded="true" />
-            <element signature="e#2490#2491#0" expanded="true" />
-            <element signature="e#2526#2527#0" expanded="true" />
-            <element signature="e#2591#2592#0" expanded="true" />
-            <element signature="e#2647#2648#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/data/database/GraphMetadata.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#882#883#0" expanded="true" />
-            <element signature="e#907#908#0" expanded="true" />
-            <element signature="e#940#941#0" expanded="true" />
-            <element signature="e#968#969#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -983,16 +1075,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/data/database/DataPoint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="16" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/core/Race.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1000,50 +1082,188 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/data/database/GraphMetadataRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="71" selection-start-line="8" selection-start-column="71" selection-end-line="8" selection-end-column="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/data/DataConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
+        <state relative-caret-position="765">
           <caret line="59" column="33" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/javax/swing/DefaultButtonModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="258" selection-start-line="258" selection-end-line="258" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/data/jackson/Ladder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/data/jackson/Division.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/data/jackson/League.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/data/jackson/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#267#268#0" expanded="true" />
+            <element signature="e#296#297#0" expanded="true" />
+            <element signature="e#353#354#0" expanded="true" />
+            <element signature="e#389#390#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/data/jackson/Team.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="24" column="43" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/jre/lib/rt.jar!/java/lang/Object.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/ui/UiConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/core/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="57" selection-start-line="4" selection-start-column="57" selection-end-line="4" selection-end-column="57" />
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#972#973#0" expanded="true" />
+            <element signature="e#1032#1033#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="42" selection-start-column="42" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/data/database/DataPoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/populator/PopulatorConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/andrewhoover/sctool/populator/GraphDataTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-265">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#208#209#0" expanded="true" />
+            <element signature="e#250#251#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/populator/GraphData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="63" column="38" selection-start-line="63" selection-start-column="38" selection-end-line="63" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/populator/DataPopulator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2408">
-          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        <state relative-caret-position="-816">
+          <caret line="77" column="73" selection-start-line="77" selection-start-column="73" selection-end-line="77" selection-end-column="73" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/data/database/GraphMetadataRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="71" selection-start-line="8" selection-start-column="71" selection-end-line="8" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/data/database/GraphMetadata.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="50" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#882#883#0" expanded="true" />
+            <element signature="e#907#908#0" expanded="true" />
+            <element signature="e#940#941#0" expanded="true" />
+            <element signature="e#968#969#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/andrewhoover/sctool/ui/DrawGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="123" column="21" selection-start-line="123" selection-start-column="21" selection-end-line="123" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1258">
-          <caret line="74" column="18" selection-start-line="74" selection-start-column="18" selection-end-line="74" selection-end-column="18" />
+        <state relative-caret-position="391">
+          <caret line="94" column="24" selection-start-line="94" selection-start-column="24" selection-end-line="94" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -1066,7 +1286,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited />
+          <last-edited>No facets are configured</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1126,7 +1346,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited />
+          <last-edited>Maven: com.fasterxml.jackson.core:jackson-core:2.9.4</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

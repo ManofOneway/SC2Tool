@@ -7,6 +7,7 @@ import com.andrewhoover.sctool.ui.UiSettings;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import java.io.BufferedReader;
@@ -24,10 +25,8 @@ import java.util.List;
 public class DataPopulator
 {
     // TODO: This token should not be hard coded. Among other issues, it expires every 30 days.
-    // Could be command line arg, or set in a .properties file.
-    // Probably should be set in a prop file so I can try out using Spring to read it :D
-    private static final String OAuthToken = "5uzpqfxrnxt9ytszbgawz87y";
-
+    private final String oAuthToken;
+    private final String seasonId;
 
     private final GraphData graphData;
     private final DataPointRepository dataPointRepository;
@@ -36,12 +35,16 @@ public class DataPopulator
 
     @Autowired
     public DataPopulator(GraphData graphData, DataPointRepository dataPointRepository,
-                         GraphMetadataRepository graphMetadataRepository, UiSettings uiSettings)
+                         GraphMetadataRepository graphMetadataRepository, UiSettings uiSettings,
+                         @Value("${com.andrewhoover.sctool.oauthtoken}") String oAuthToken,
+                         @Value("${com.andrewhoover.sctool.seasonid}") String seasonId)
     {
         this.graphData = graphData;
         this.dataPointRepository = dataPointRepository;
         this.graphMetadataRepository = graphMetadataRepository;
         this.uiSettings = uiSettings;
+        this.oAuthToken = oAuthToken;
+        this.seasonId = seasonId;
     }
 
     private List<Ladder> getLadders(League league)
@@ -52,7 +55,7 @@ public class DataPopulator
         for (final Integer ladderId : ladderIds) {
 
             try {
-                String ladder = readUrl(new URL("https://us.api.battle.net/data/sc2/ladder/" + ladderId + "?access_token=" + OAuthToken));
+                String ladder = readUrl(new URL("https://us.api.battle.net/data/sc2/ladder/" + ladderId + "?access_token=" + oAuthToken));
                 ObjectMapper mapper = new ObjectMapper();
                 mapper.configure (DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
                 ladders.add(mapper.readValue(ladder, Ladder.class));
@@ -71,7 +74,8 @@ public class DataPopulator
 
         for( int i = 0; i < 6; i++ ) {
             try {
-                String league = readUrl(new URL("https://us.api.battle.net/data/sc2/league/36/201/0/" + i + "?access_token=" + OAuthToken));
+                String league = readUrl(new URL("https://us.api.battle.net/data/sc2/league/" + seasonId
+                        +"/201/0/" + i + "?access_token=" + oAuthToken));
                 ObjectMapper mapper = new ObjectMapper();
                 mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
                 leagues.add(mapper.readValue(league, League.class));
